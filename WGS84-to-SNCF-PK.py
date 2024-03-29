@@ -13,7 +13,7 @@ railway_gdf = gpd.GeoDataFrame(
     crs="EPSG:4326"
 ).to_crs("EPSG:2154")
 
-# Load camera data
+# Load your CSV with WGS84 points (in my case camera positions)
 camera_df = pd.read_csv('camera.csv', delimiter=',')  # Adjust delimiter if necessary
 camera_gdf = gpd.GeoDataFrame(
     camera_df,
