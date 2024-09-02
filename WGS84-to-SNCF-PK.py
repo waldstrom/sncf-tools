@@ -45,4 +45,3 @@ updated_camera_df = pd.concat([camera_df.reset_index(drop=True), results_df.rese
 
 # Save to CSV
 updated_camera_df.to_csv('updated_camera_with_railway_info.csv', index=False)
-Réduire
